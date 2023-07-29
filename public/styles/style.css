@@ -29,11 +29,12 @@ nav a{
 h1{
     width: 40%;
     justify-content: center;display: flex;align-items: center;
-    margin: 1em 25%;
+    margin: 0 25%;
     height: 60px;font-size: 1.5rem;
     border-radius: 0.1em;
     color: rgb(255, 255, 255);
-    background-color: #116A7B;
+    background-color: #116A7B;border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     font-family: 'Lilita One', cursive;
 }
 .main_container{
@@ -41,10 +42,11 @@ h1{
     margin: -5px 25%;
     min-height: 400px;
     max-height:500px ;
+    border: 2px solid #116A7B;
     display: flex;box-sizing: border-box;
     flex-direction: column;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     padding: 20px;
     width: 40%;
     font-family: 'Playfair Display', serif;
@@ -53,24 +55,26 @@ h1{
     scrollbar-width: thin;overflow-x: hidden;
     margin-bottom: 200px;
 }
+
 #form{
     display: flex;
     justify-content: space-around;
     margin:0px 25%;
-    border-bottom:0.5px solid #EEE2DE;
+    border: 2px solid #116A7B;
     padding: 5px;
     text-align: center;
+    margin-top: -2px;
     width: 40%;
-    box-sizing: border-box;padding: 0px;
+    box-sizing: border-box;padding: 20px;background-color: #e6ecee;
 }
 #form input{
     border-top-left-radius: 10px;
    
     box-sizing: border-box;
-    border: 0.1px solid #116A7B ;
+    
     width: 100%;margin-right: -1px;
     height: 50px;z-index: 6;
-   
+     border-radius: 30px;
     word-spacing: 5px;
     padding: 5px 20px;
     
@@ -78,15 +82,17 @@ h1{
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #116A7B;
     opacity: 1; /* Firefox */
+    font-size: 1.5rem;
   }
 
 #form button{
     background-color: #116A7B;
-    border-top-right-radius: 10px;
+   border-radius: 30px;
     padding: 5px;
-    color: white;
+    color: white;font-size: small;font-weight: bolder;
     box-sizing: border-box;
     border: none;width: 100px;
+    margin-left: 1rem;
 }
 #chb{
     display: flex;
@@ -96,10 +102,11 @@ h1{
     align-items: center;
     letter-spacing: 3px;
     font-size: 1.5rem;
-    
+    font-family: 'Lilita One', cursive;
     padding: 20px;
     
 }
+
 #chb li{
     word-wrap: break-word;width: 100%;
     font-size: larger;
@@ -115,7 +122,7 @@ h1{
 }
 .completed-task{
   text-decoration: line-through;
-  color: #116A7B;
+  color: #116A7B;opacity: 0.5;
 }
 input[type="checkbox"] {
     width: 20px;
@@ -138,7 +145,7 @@ input[type="checkbox"] {
  h1{
     width: 100%;
     justify-content: center;
-    margin:1rem 0;
+    margin: 0;
     font-size: 1.5rem;
     
  }
